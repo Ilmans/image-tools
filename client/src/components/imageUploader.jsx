@@ -106,7 +106,7 @@ export default function ImageUploader() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       const res = await axios.post(
-        "http://localhost:3100/api/convert",
+        "http://localhost:3100/api/convert/convert",
         formData,
         {
           responseType: "blob",
